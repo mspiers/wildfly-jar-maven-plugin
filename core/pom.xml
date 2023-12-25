@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-    Copyright 2020 Red Hat, Inc. and/or its affiliates
+    Copyright 2023 Red Hat, Inc. and/or its affiliates
     and other contributors as indicated by the @author tags.
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,27 +26,19 @@
         <version>10.0.0.Final</version>
     </parent>
 
-    <artifactId>wildfly-jar-maven-plugin-perf-tests-parent</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>wildfly-jar-maven-plugin-core</artifactId>
+    <packaging>jar</packaging>
 
-    <name>WildFly Bootable JAR Maven Plugin perf tests parent</name>
-
-    <properties>
-        <skip.perf.tests>true</skip.perf.tests>
-    </properties>
+    <name>WildFly Bootable JAR Maven Plugin core</name>
 
     <dependencies>
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>wildfly-jar-maven-plugin</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.jboss.galleon</groupId>
+            <artifactId>galleon-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>wildfly-jar-cloud-extension</artifactId>
+            <groupId>org.jboss.galleon</groupId>
+            <artifactId>galleon-maven-universe</artifactId>
         </dependency>
     </dependencies>
-    <modules>
-        <module>plugin-memory</module>
-    </modules>
 </project>

@@ -1,7 +1,10 @@
 {
-  "provider-url": "${org.wildfly.bootable.jar.example.oidc.provider-url}",
+  "realm": "poc",
+  "auth-server-url": "http://localhost/",
   "ssl-required": "external",
-  "client-id": "simple-webapp",
+  "resource": "rulie",
   "public-client": true,
+  "verify-token-audience": true,
+  "use-resource-role-mappings": true,
   "confidential-port": 0
 }

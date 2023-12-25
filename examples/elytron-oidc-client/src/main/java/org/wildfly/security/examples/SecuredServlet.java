@@ -35,7 +35,7 @@ import jakarta.servlet.http.HttpServletResponse;
  * @author <a href="mailto:darran.lofthouse@jboss.com">Darran Lofthouse</a>
  */
 @WebServlet("/secured")
-@ServletSecurity(httpMethodConstraints = { @HttpMethodConstraint(value = "GET", rolesAllowed = { "Users" }) })
+@ServletSecurity(httpMethodConstraints = { @HttpMethodConstraint(value = "GET", rolesAllowed = { "admin" }) })
 public class SecuredServlet extends HttpServlet {
 
     @Override
